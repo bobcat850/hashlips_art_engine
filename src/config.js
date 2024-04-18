@@ -5,17 +5,16 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "OG_BUDS";
+const description = "4200 Unique Cannabis Buds";
 const baseUri = "ipfs://NewUriToReplace";
-
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "OGBUD",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://twitter.com/CCCannasseurs",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x3adC2b65777F919a8f093fb428cb40584368dA8d",
       share: 100,
     },
   ],
@@ -24,26 +23,144 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 420,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Durban Poison" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 840,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Grape Ape" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 1260,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Sour Diesel" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 1680,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Skunk" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 2100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Cheese" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 2520,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Purp" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 2940,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Northern Lights" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 3360,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Original OG" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 3780,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "Pineapple Express" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
+    ],
+  },
+  {
+    growEditionSizeTo: 4200,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shoes" },
+      { name: "Eyes" },
+      { name: "White Widow" },
+      { name: "Hands" },
+      { name: "Chain" },
+      { name: "Headwear"},
+      { name: "Glasses"},
     ],
   },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 3000,
+  height: 3000,
   smoothing: false,
 };
 
